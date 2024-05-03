@@ -64,7 +64,6 @@
                           <li><a href="/specialities">Manage Specialities</a></li>
                           <li><a href="{{route('files.create')}}">Upload File</a></li>
                           <li><a href="/dashboard" style="color: #FFBC3B;">Logout</a></li>
-
                       </ul>
                   </li>
               </ul>
@@ -72,7 +71,7 @@
       </div>
         <div class="content-body">
             <div class="container-fluid">
-                <div class="row page-titles mx-0">
+                <div class="mx-0 row page-titles">
                     <div class="col-sm-6 p-md-0">
                         <div class="welcome-text">
                             <h4 style="color: #FFBC3B; font-family:Verdana, Geneva, Tahoma, sans-serif;">Hi, welcome back!</h4>
@@ -88,7 +87,7 @@
                                 <h4 class="card-intro-title">Manage Students</h4>
                             </div>
                             <div class="card">
-                                <div class="card-body p-4">
+                                <div class="p-4 card-body">
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -121,7 +120,7 @@
                                 <h4 class="card-intro-title">Manage Marks</h4>
                             </div>
                             <div class="card">
-                                <div class="card-body p-4">
+                                <div class="p-4 card-body">
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -154,7 +153,7 @@
                                 <h4 class="card-intro-title">Manage Courses</h4>
                             </div>
                             <div class="card">
-                                <div class="card-body p-4">
+                                <div class="p-4 card-body">
                                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                         <ol class="carousel-indicators">
                                             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -192,7 +191,7 @@
                           <h4 class="card-intro-title">Manage Specialities</h4>
                       </div>
                       <div class="card">
-                          <div class="card-body p-4">
+                          <div class="p-4 card-body">
                               <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                   <ol class="carousel-indicators">
                                       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -223,7 +222,7 @@
                             <h4 class="card-intro-title">Manage Announcements</h4>
                         </div>
                         <div class="card">
-                            <div class="card-body p-4">
+                            <div class="p-4 card-body">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
@@ -251,7 +250,7 @@
                             <h4 class="card-intro-title">Upload File</h4>
                         </div>
                         <div class="card">
-                            <div class="card-body p-4">
+                            <div class="p-4 card-body">
                                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
                                         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
