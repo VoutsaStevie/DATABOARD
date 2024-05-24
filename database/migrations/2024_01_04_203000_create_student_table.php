@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('email');
             $table->enum('level',[1,2,3,4,5]);
             $table->date('birthdate');
-            $table->integer('numero');
+            $table->string('numero');
             $table->string('filiere');
         });
     }

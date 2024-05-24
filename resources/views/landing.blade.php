@@ -36,10 +36,33 @@
   <!--Favicon-->
   <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
   <link rel="icon" href="{{asset('images/favicon.png')}}" type="image/x-icon">
+  <style>
+
+@media (min-width: 855px) {
+    .container, .container-sm {
+        max-width: 1000px;
+    }
+}
+
+element.style {
+    margin-top: 0px;
+}
+@media (max-width: 991px) {
+    .navigation {
+        background: #1a1a37;
+    }
+}
+.bg-white {
+    background-color: #1a1a37 !important;
+}
+.header{
+    background-color: #1a1a37
+}
+  </style>
 </head>
 
 <body>
-  <!-- preloader start -->
+  <!-- preloader start 576 540-->
   <div class="preloader">
     <img src="{{asset('images/preloader.gif')}}" alt="preloader">
   </div>
@@ -47,129 +70,45 @@
 
 <!-- header -->
 <header class="fixed-top header">
-  <!-- top header -->
-  <div class="py-2 bg-white top-header">
-    <div class="container">
-      <div class="row no-gutters">
-        <div class="text-center col-lg-4 text-lg-left">
-          <a class="mr-3 text-color" href="tel:+443003030266"><strong>CALL</strong> +237 656 551 166</a>
-          <ul class="list-inline d-inline">
-            <li class="mx-0 list-inline-item"><a class="p-2 d-inline-block text-color" href="https://www.fb.com/l/6lp1kJRRR"><i class="ti-facebook"></i></a></li>
-            <li class="mx-0 list-inline-item"><a class="p-2 d-inline-block text-color" href="https://twitter.com/MacheVoutsa/status/1563250535779614727"><i class="ti-twitter-alt"></i></a></li>
-            <li class="mx-0 list-inline-item"><a class="p-2 d-inline-block text-color" href="https://github.com/VoutsaStevie/DATABOARD"><i class="ti-github"></i></a></li>
-            <li class="mx-0 list-inline-item"><a class="p-2 d-inline-block text-color" href="https://instagram.com/itz_s.t.e.v.i.e/"><i class="ti-instagram"></i></a></li>
-          </ul>
-        </div>
-        <div class="text-center col-lg-8 text-lg-right">
-          <ul class="list-inline">
-            <li class="list-inline-item"><a class="px-0 py-2 text-uppercase text-color p-sm-2 d-inline-block" href="#"></a></li>
-            <li class="list-inline-item"><a class="px-0 py-2 text-uppercase text-color p-sm-2 d-inline-block" href="#"></a></li>
-            <li class="list-inline-item"><a class="px-0 py-2 text-uppercase text-color p-sm-2 d-inline-block" href="#"></a></li>
-            <li class="list-inline-item"><a class="px-0 py-2 text-uppercase text-color p-sm-2 d-inline-block" href="#loginModal" data-toggle="modal" data-target="#loginModal">login</a></li>
-            <li class="list-inline-item"><a class="px-0 py-2 text-uppercase text-color p-sm-2 d-inline-block" href="#signupModal" data-toggle="modal" data-target="#signupModal">register</a></li>
-          </ul>
-        </div>
+    <!-- top header -->
+
+    <!-- navbar -->
+    <div class="navigation w-100">
+      <div class="container custom-nav-container">
+        <nav class="p-0 navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+          <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
+            aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navigation">
+            <ul class="ml-auto text-center navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="#acceuil">HOME</a>
+              </li>
+              <li class="nav-item @@about">
+                <a class="nav-link" href="#about">ABOUT</a>
+              </li>
+              <li class="nav-item @@courses">
+                <a class="nav-link" href="#courses">COURSES</a>
+              </li>
+              <li class="nav-item @@courses">
+                  <a class="nav-link" href="/signin">BULLETIN-BOARD</a>
+              </li>
+              <li class="nav-item @@events">
+                <a class="nav-link" href="#events">EVENTS</a>
+              </li>
+              <li class="nav-item @@contact">
+                <a class="nav-link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
     </div>
-  </div>
-  <!-- navbar -->
-  <div class=" navigation w-100">
-    <div class="container">
-      <nav class="p-0 navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-        <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
-          aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="ml-auto text-center navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#acceuil">Home</a>
-            </li>
-            <li class="nav-item @@about">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item @@courses">
-              <a class="nav-link" href="#courses">COURSES</a>
-            </li>
-            <li class="nav-item @@events">
-              <a class="nav-link" href="#events">EVENTS</a>
-            </li>
-            <li class="nav-item @@contact">
-              <a class="nav-link" href="#contact">CONTACT</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
+  </header>
 <!-- /header -->
-<!-- Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="p-4 border-0 modal-content rounded-0">
-            <div class="border-0 modal-header">
-                <h3>Register</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="login">
-                    <form action="#" class="row">
-                        <div class="col-12">
-                            <input type="text" class="mb-3 form-control" id="signupPhone" name="signupPhone" placeholder="Phone">
-                        </div>
-                        <div class="col-12">
-                            <input type="text" class="mb-3 form-control" id="signupName" name="signupName" placeholder="Name">
-                        </div>
-                        <div class="col-12">
-                            <input type="email" class="mb-3 form-control" id="signupEmail" name="signupEmail" placeholder="Email">
-                        </div>
-                        <div class="col-12">
-                            <input type="password" class="mb-3 form-control" id="signupPassword" name="signupPassword" placeholder="Password">
-                        </div>
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Modal -->
-<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog modal-lg" role="document">
-        <div class="p-4 border-0 modal-content rounded-0">
-            <div class="border-0 modal-header">
-                <h3>Login</h3>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form action="#" class="row">
-                    <div class="col-12">
-                        <input type="text" class="mb-3 form-control" id="loginPhone" name="loginPhone" placeholder="Phone">
-                    </div>
-                    <div class="col-12">
-                        <input type="text" class="mb-3 form-control" id="loginName" name="loginName" placeholder="Name">
-                    </div>
-                    <div class="col-12">
-                        <input type="password" class="mb-3 form-control" id="loginPassword" name="loginPassword" placeholder="Password">
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">LOGIN</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
-
 <!-- hero slider -->
 <section class="bg-cover hero-section overlay" data-background="images/banner/banner-1.jpg">
   <div class="container">
@@ -526,8 +465,6 @@
   </div>
 </section>
 <!-- /teachers -->
-
-<!-- blog -->
 
 <!-- footer -->
 <footer>

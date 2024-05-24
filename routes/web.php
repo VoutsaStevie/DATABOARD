@@ -127,5 +127,5 @@ Route::post('/import_courses', [ImportsController::class, 'submitCourses']);
 Route::get('/import_students', [ImportsController::class, 'importStudents']);
 Route::post('/import_students', [ImportsController::class, 'submitStudents']);
 
-Route::get('/sms', [SmsController::class, 'sms']);
-Route::get('/sms/view', [SmsController::class, 'view']);
+//Route::get('/sms', [SmsController::class, 'sms']);
+//Route::get('/sms/view', [SmsController::class, 'view']);

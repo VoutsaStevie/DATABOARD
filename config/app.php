@@ -156,6 +156,8 @@ return [
     */
 
     'providers' => ServiceProvider::defaultProviders()->merge([
+
+        Propaganistas\LaravelPhone\PhoneServiceProvider::class,
         /*
          * Package Service Providers...
          */

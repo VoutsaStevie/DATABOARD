@@ -21,7 +21,7 @@ class studentSeeder extends Seeder
             'email'=> 'machevoutsa@gmail.com',
             'level'=> '3',
             'birthdate'=> '2004-01-20',
-            'numero'=>'656551166',
+            'numero'=>'+237656551166',
             'filiere'=> 'ICT4D'],
 
             ['full_name'=> 'sibelle',
@@ -31,7 +31,7 @@ class studentSeeder extends Seeder
             'email'=> 'deisibelle@gmail.com',
             'level'=> '3',
             'birthdate'=> '2002-02-22',
-            'numero'=>'673219684',
+            'numero'=>'+237673219684',
             'filiere'=> 'ICT4D'],
 
             ['full_name'=> 'Sophia',
@@ -41,7 +41,7 @@ class studentSeeder extends Seeder
             'email'=> 'mbasophia@gmail.com',
             'level'=> '2',
             'birthdate'=> '2005-01-20',
-            'numero'=>'672791963',
+            'numero'=>'+237672791963',
             'filiere'=> 'ICT4D'],
 
             ['full_name'=> 'AD',
@@ -51,7 +51,7 @@ class studentSeeder extends Seeder
             'email'=> 'akofenadigital@gmail.com',
             'level'=> '3',
             'birthdate'=> '2004-01-20',
-            'numero'=>'659393756',
+            'numero'=>'+237659393756',
             'filiere'=> 'ICT4D'],
 
             ['full_name'=> 'mvs',
@@ -61,7 +61,7 @@ class studentSeeder extends Seeder
             'email'=> 'stevie.mache@facsciences-uy1.cm',
             'level'=> '3',
             'birthdate'=> '2004-08-10',
-            'numero'=>'672950064',
+            'numero'=>'+237672950064',
             'filiere'=> 'ICT4D'],
         ]);
     }
