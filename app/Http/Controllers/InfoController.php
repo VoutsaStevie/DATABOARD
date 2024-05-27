@@ -53,17 +53,15 @@ class InfoController extends Controller
          {
              //sending mail
              //Mail::to($student->email)
-             //->send(new WelcomeMail("New","Nouvelle information sur UY1 Databoard"));
-             //->attachData();
+            // ->send(new WelcomeMail("New","Nouvelle information sur UY1 Databoard"));
 
              $phoneNumber = $student->numero; // Assurez-vous que ce champ est correct dans votre modèle
-            $validator = Validator::make(
+             $validator = Validator::make(
                 ['phone' => $phoneNumber],
                 ['phone' => 'phone:CM'] // CM pour Cameroun
             );
 
             if ($validator->fails()) {
-                // Gérer les numéros de téléphone non valides
                 continue;
             }
 
